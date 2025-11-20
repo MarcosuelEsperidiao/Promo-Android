@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shimmer_duration="1000"
+    app:shimmer_repeat_count="-1"
+    app:shimmer_auto_start="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Placeholder para a imageViewProfile -->
+        <View
+            android:id="@+id/skeleton_imageViewProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para o timestamp -->
+        <View
+            android:id="@+id/skeleton_text_timestamp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para o nome do usuário -->
+        <View
+            android:id="@+id/skeleton_text_user_name"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/skeleton_imageViewProfile"
+            android:layout_toEndOf="@id/skeleton_imageViewProfile"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para o location -->
+        <View
+            android:id="@+id/skeleton_text_location"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para o endereço -->
+        <View
+            android:id="@+id/skeleton_text_locario"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/skeleton_text_location"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para o preço -->
+        <View
+            android:id="@+id/skeleton_text_price_detail"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/skeleton_text_locario"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para a imagem principal -->
+        <View
+            android:id="@+id/skeleton_imageViewPreview"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/skeleton_text_price_detail"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Placeholder para a descrição -->
+        <View
+            android:id="@+id/skeleton_text_description"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/skeleton_imageViewPreview"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_skeleton_rect" />
+
+        <!-- Linha divisória -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/skeleton_text_description"
+            android:layout_marginTop="60dp"
+            android:background="#CCCCCC" />
+
+    </RelativeLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

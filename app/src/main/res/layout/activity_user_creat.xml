@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DB954"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".View.UserCreatActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/title_create"
+        android:text="Criar Conta"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Campo Nome -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_name"
+        android:layout_below="@id/title_create"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Primeiro Nome"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                android:padding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Campo Celular -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_phone"
+        android:layout_below="@id/card_name"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Celular"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="phone"
+                android:textSize="18sp"
+                android:padding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Campo Senha -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_password"
+        android:layout_below="@id/card_phone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_creat_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="numberPassword"
+                android:textSize="18sp"
+                android:padding="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Informação senha -->
+    <TextView
+        android:id="@+id/passoword_info"
+        android:layout_below="@id/card_password"
+        android:text="A senha deve ter 6 dígitos"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Botão Criar Conta -->
+    <Button
+        android:id="@+id/btn_creat_count"
+        android:layout_below="@id/passoword_info"
+        android:text="Criar conta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/green"
+        android:stateListAnimator="@null"
+        android:elevation="8dp"
+        android:clipToOutline="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

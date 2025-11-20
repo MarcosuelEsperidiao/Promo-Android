@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Promo</string>
+    <string name="lowprice">Promo</string>
+    <string name="welcome">Welcome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="ask_creat">Ainda nao é cadastrado?</string>
+    <string name="compartilhar_promo_o">Compartilhar Promoção</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="terms_and_conditions">
+        Termos e Condições de Uso
+
+        1. Aceitação dos Termos
+
+        Ao acessar e usar o nosso aplicativo, você concorda em cumprir e ficar vinculado aos seguintes Termos e Condições. Se você não concordar com estes termos, por favor, não use o aplicativo.
+
+        2. Serviços Oferecidos
+
+        Nosso aplicativo fornece informações sobre produtos, incluindo preços e fotos. Todas as informações são disponibilizadas gratuitamente para os usuários.
+
+        3. Uso do Aplicativo
+
+        Você concorda em usar o aplicativo apenas para fins pessoais e não comerciais. É proibido:
+
+        Reproduzir, duplicar, copiar, vender, revender ou explorar qualquer parte do aplicativo sem nossa permissão expressa por escrito.
+        Usar o aplicativo para fins ilegais ou não autorizados.
+
+        4. Conteúdo e Precisão das Informações
+
+        Embora nos esforcemos para garantir que as informações fornecidas no aplicativo sejam precisas e atualizadas, não garantimos a precisão, integridade ou atualidade das informações. O uso das informações é de sua responsabilidade e risco.
+
+        5. Propriedade Intelectual
+
+        Todos os conteúdos do aplicativo, incluindo textos, imagens, gráficos e logotipos, são protegidos por direitos autorais e outras leis de propriedade intelectual. Você não deve modificar, copiar, distribuir ou utilizar qualquer conteúdo sem a nossa permissão.
+
+        6. Limitação de Responsabilidade
+
+        Não seremos responsáveis por quaisquer danos diretos, indiretos, incidentais, especiais ou consequenciais que resultem do uso ou da incapacidade de usar o aplicativo, mesmo que tenhamos sido informados da possibilidade desses danos.
+
+        7. Alterações aos Termos
+
+        Reservamo-nos o direito de alterar estes Termos e Condições a qualquer momento. Quaisquer alterações serão publicadas no aplicativo e entrarão em vigor imediatamente após a publicação. O uso continuado do aplicativo após a publicação das alterações constitui aceitação dos novos termos.
+
+        8. Privacidade
+
+        A sua privacidade é importante para nós. Por favor, revise nossa Política de Privacidade para entender como coletamos, usamos e protegemos suas informações pessoais.
+
+        9. Contato
+
+        Se você tiver alguma dúvida ou preocupação sobre estes Termos e Condições, por favor, entre em contato conosco através do e-mail suporte@seuapp.com.
+    </string>
+</resources>

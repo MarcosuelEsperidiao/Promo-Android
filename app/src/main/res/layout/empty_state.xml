@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="gone"
+    android:layout_marginTop="80dp"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Animação Lottie -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/empty_animation"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/empty"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <!-- Texto informativo -->
+    <TextView
+        android:id="@+id/empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ainda não há produtos.\nAdicione o primeiro agora!"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:paddingTop="16dp"/>
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.PerfilUserActivity">
+
+    <ImageView
+        android:id="@+id/photo_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/profile_image_default_round"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <ImageView
+        android:id="@+id/img_fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/photo_profile"
+        android:layout_centerHorizontal="true"
+        android:text="Marcos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/profile_view"
+        android:layout_margin="10dp"
+        android:background="#2AA19595"
+        android:layout_below="@id/name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/person_profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/profile_person_24"
+        android:layout_below="@id/profile_view"
+        android:layout_width="25dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/info_profile"
+        android:padding="5dp"
+        android:layout_toEndOf="@id/person_profile"
+        android:layout_alignTop="@id/person_profile"
+        android:layout_marginStart="10dp"
+        android:text="Informações Pessoais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/right_profile"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/info_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:src="@drawable/profile_chevron_right_24"/>
+
+
+    <ImageView
+        android:id="@+id/setting_profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/person_profile"
+        android:src="@drawable/profile_settings_24"
+        android:layout_width="25dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/txt_setting_profile"
+        android:text="Informações"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/setting_profile"
+        android:layout_alignTop="@id/setting_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <ImageView
+        android:id="@+id/right_profile_config"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txt_setting_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:src="@drawable/profile_chevron_right_24"/>
+
+    <ImageView
+        android:id="@+id/form_profile"
+        android:layout_below="@id/setting_profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/profile_list_alt_24"
+        android:layout_width="25dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/form_text_profile"
+        android:text="Termos e Condições"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/form_profile"
+        android:layout_alignTop="@id/form_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/right_profile_form"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/form_text_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:src="@drawable/profile_chevron_right_24"/>
+
+    <View
+        android:id="@+id/profile_view_second"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#2AA19595"
+        android:layout_below="@id/form_profile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/logout_profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/profile_logout_24"
+        android:layout_below="@id/profile_view_second"
+        android:layout_width="25dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/logout_text"
+        android:text="Log out"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/logout_profile"
+        android:layout_alignTop="@id/logout_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/right_profile_logout"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/logout_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:src="@drawable/profile_chevron_right_24"/>
+
+
+</RelativeLayout>
